@@ -45,14 +45,14 @@ a{
     cursor: pointer;
     transition: all 0.3s ease;
   }
-  .nav-item .photo {
+.nav-item .photo {
     margin-right: 10px;
     font-size: 18px;
   }
-  .nav-item:hover {
+.nav-item:hover {
     color: #fff;
   }
-  .netext{
+.netext{
     color: white;
     font-size: 16px;
   }
@@ -77,3 +77,35 @@ a{
     margin-top: 30px;
     font-size: 14px;
   }
+.news{
+    display: flex;
+    margin-left: 35px;
+    margin-top: 70px;
+}
+  .newsband{
+    display: flex;
+    height: 355px;
+    width: 300px;
+    background-color: #171717;
+    background-image: url(../image/bandle.png);
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    margin-top: 70px;
+    margin-left: -60px;
+}
+.textband{
+    display: flex;
+    margin-top: 210px;
+    margin-left: 15px;
+    height: 15px;
+    width: 135px;
+    background-color: #EF4444;
+    font-size: 8px;
+    align-items: center;
+    justify-content: center;
+}
+.twotextband{
+    display: flex;
+    margin-left: 15px;
+    font-size: 14px;
+}
