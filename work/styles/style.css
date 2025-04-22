@@ -13,47 +13,30 @@ a{
 }
 .nav{
     display: flex;
-    flex-direction: column;
-    background-color: #171717;
     height: 100vh;
     width: 350px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #171717;
 }
 .svg{
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
+}   
 .mainnav{
     display: flex;
-    margin: 0 auto;
-    color: #FAFAFA;
-    white-space: nowrap;
+    font-size: 20px;
     flex-direction: column;
+
 }
 .nav-item {
     display: flex;
-    align-items: center;
     padding: 8px 12px;
     margin-bottom: 10px;
     color: #888;
     transition: all 0.3s ease;
 }
-.nav-item .text {
-    color: #888;
-}
-.nav-item .text:hover {
-    color: #fff;
-}
-.nav-item:first-child .text {
-    color: #fff;
-}
-.nav-item:first-child .text:hover {
-    color: #fff;
-}
-.nav-item .photo {
-    margin-right: 10px;
-    font-size: 18px;
-}
+
 .nav-item:hover {
     color: #fff;
 }
