@@ -38,19 +38,15 @@ a{
     color: #888;
     transition: all 0.3s ease;
 }
-
 .nav-item .text {
     color: #888;
 }
-
 .nav-item .text:hover {
     color: #fff;
 }
-
 .nav-item:first-child .text {
     color: #fff;
 }
-
 .nav-item:first-child .text:hover {
     color: #fff;
 }
@@ -61,7 +57,6 @@ a{
 .nav-item:hover {
     color: #fff;
 }
-
 .profile-image {
     background-color: rgba(212, 212, 212, 0.25);
     padding: 25px;
@@ -194,4 +189,74 @@ a{
 }
 .linkhero:hover{
     background-color: #EF4444;
+}
+@media (max-width: 1024px) {
+    .mainnav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .news2 {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav.nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mainnav .nav-item {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .worldnews {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .world img {
+        width: 100%;
+        height: auto;
+    }
+
+    .news2 {
+        flex-direction: column;
+    }
+
+    .newsband, .newshero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rick h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .profile-image {
+        width: 40px;
+        height: 40px;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-item .text {
+        font-size: 12px;
+    }
+
+    .text h1 {
+        font-size: 22px;
+    }
+
+    .netext {
+        font-size: 14px;
+    }
 }
