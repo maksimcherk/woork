@@ -177,64 +177,63 @@ a{
 .linkhero:hover{
     background-color: #EF4444;
 }
-/* ========================================= */
-/* Medium devices (tablets, less than 992px) */
-/* ========================================= */
+
 @media (max-width: 1024px) {
     body {
-        display: block; /* Переключаем на блочную модель раньше */
+        display: block; 
     }
 
     .nav {
-        width: 100%; /* Навигация на всю ширину */
-        height: auto; /* Высота по контенту */
-        flex-direction: row; /* Лого и ссылки в строку */
-        justify-content: space-between; /* Лого слева, ссылки справа */
-        align-items: center; /* Выравнивание по центру по вертикали */
-        padding: 15px 3%; /* Отступы */
-        position: static; /* Убираем позиционирование */
+        display: flex;
+        width: 100%; 
+        height: auto; 
+        flex-direction: row; 
+        align-items: center;
+        align-items: center; 
+        padding: 15px 3%;
         box-sizing: border-box;
     }
 
     .nav .svg-f {
-        margin-bottom: 0; /* Убираем отступ под лого */
-        flex-shrink: 0; /* Запрещаем лого сжиматься */
+        margin-bottom: 0; 
+        flex-shrink: 0; 
     }
 
     .nav .mainnav {
-        flex-direction: row; /* Ссылки в строку */
-        flex-wrap: wrap; /* Разрешаем перенос ссылок */
-        justify-content: flex-end; /* Прижимаем ссылки к правому краю */
-        gap: 5px 15px; /* Промежутки между ссылками */
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: flex-end; 
+        gap: 5px 15px; 
         padding: 0;
     }
 
     .nav .mainnav .nav-item {
-        padding: 8px 10px; /* Немного уменьшаем отступы у ссылок */
-        margin-bottom: 0; /* Убираем нижний отступ */
+        padding: 8px 10px; 
+        margin-bottom: 0; 
     }
 
     .nav .mainnav .nav-item .text {
-        font-size: 0.9em; /* Слегка уменьшаем текст */
+        font-size: 0.9em; 
     }
 
     main {
-        width: 100%; /* Основной контент на всю ширину */
-        padding: 0 3%; /* Добавляем боковые отступы */
+        width: 100%; 
+        padding: 0 3%; 
         box-sizing: border-box;
     }
 
     .worldnews {
-        flex-direction: column; /* Картинка и текст друг под другом */
-        align-items: center; /* Центрируем */
-        text-align: center; /* Текст по центру */
-        margin: 40px 0; /* Вертикальные отступы */
-        padding: 0; /* Убираем паддинги секции */
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center; 
+        margin: 40px 0; 
+        padding: 0; 
         gap: 25px;
     }
 
     .worldnews .world {
-        max-width: 70%; /* Ограничиваем ширину картинки */
+        max-width: 70%; 
         margin-bottom: 0;
     }
      .worldnews .world img {
@@ -244,16 +243,16 @@ a{
     }
 
     .worldnews .text h1 {
-        font-size: 1.8em; /* Корректируем размер заголовка */
+        font-size: 1.8em; 
     }
 
     .worldnews .link {
         margin-left: auto;
-        margin-right: auto; /* Центрируем кнопку */
+        margin-right: auto; 
     }
 
     .news {
-        display: block; /* Заголовок над блоками новостей */
+        display: block; 
         margin: 40px 0;
         padding: 0;
         gap: 0;
@@ -266,25 +265,25 @@ a{
     }
 
     .news2 {
-        flex-direction: column; /* Карточки друг под другом */
-        align-items: center; /* Центрируем карточки */
-        transform: none; /* Убираем сдвиг */
-        gap: 30px; /* Отступ между карточками */
+        flex-direction: column; 
+        align-items: center; 
+        transform: none; 
+        gap: 30px; 
         margin-top: 0;
     }
 
     .newsband,
     .newshero {
-        width: 85%; /* Задаем ширину карточек */
-        max-width: 450px; /* Ограничиваем максимальную ширину */
-        margin-left: 0; /* Убираем отступ */
-        height: auto; /* Высота по контенту */
+        width: 85%; 
+        max-width: 450px; 
+        margin-left: 0; 
+        height: auto; 
     }
-    /* Убираем верхний отступ у первой карточки, если он был */
+
     .newsband {
         margin-top: 0;
     }
-     /* Убираем верхний отступ у второй карточки */
+
     .newshero {
         margin-top: 0;
     }
@@ -303,7 +302,7 @@ a{
 
      .band, .hero {
         margin: 0;
-        padding: 20px; /* Увеличиваем внутренние отступы */
+        padding: 20px; 
     }
 
     .rick {
@@ -318,42 +317,34 @@ a{
     }
 
     .profile-image {
-        width: 40px; /* Размер иконки профиля */
+        width: 40px; 
         height: 40px;
         padding: 10px;
-        top: 15px; /* Возвращаем наверх */
+        top: 15px; 
         right: 15px;
-        bottom: auto; /* Убираем привязку к низу */
-        position: fixed; /* Оставляем фиксацию */
+        bottom: auto; 
+        position: fixed; 
     }
 }
 
 
-/* ===================================================== */
-/* Small devices (landscape phones, less than 768px) */
-/* ===================================================== */
+
 @media (max-width: 768px) {
     .nav {
-        padding: 15px 4%; /* Слегка корректируем отступы */
-        flex-direction: column; /* Лого над ссылками */
+        padding: 15px 4%; 
+        flex-direction: column; 
     }
      .nav .svg-f {
-        margin-bottom: 15px; /* Добавляем отступ под лого */
+        margin-bottom: 15px; 
     }
     .nav .mainnav {
-        justify-content: center; /* Центрируем ссылки */
-        width: 100%; /* На всю ширину */
-        gap: 5px 10px; /* Уменьшаем промежутки */
+        justify-content: center; 
+        width: 100%; 
+        gap: 5px 10px; 
     }
     .nav .mainnav .nav-item .text {
-        font-size: 0.85em; /* Еще немного уменьшаем текст */
+        font-size: 0.85em; 
     }
-    /* Опционально: скрыть текст на этом разрешении */
-    /*
-    .nav .mainnav .nav-item .text { display: none; }
-    .nav .mainnav .nav-item .photo { margin-right: 0; }
-    */
-
     main {
         padding: 0 4%;
     }
@@ -363,7 +354,7 @@ a{
         gap: 20px;
     }
     .worldnews .world {
-        max-width: 85%; /* Картинка может быть шире */
+        max-width: 85%; 
     }
     .worldnews .text h1 {
         font-size: 1.5em;
@@ -383,12 +374,12 @@ a{
 
     .newsband,
     .newshero {
-        width: 90%; /* Карточки еще шире */
-        max-width: 400px; /* Уменьшаем макс. ширину */
+        width: 90%; 
+        max-width: 400px; 
     }
 
     .band, .hero {
-        padding: 15px; /* Уменьшаем внутренние отступы */
+        padding: 15px; 
     }
      .band h2, .hero h2 {
         font-size: 0.85em;
@@ -406,170 +397,165 @@ a{
     }
 
     .profile-image {
-        width: 38px; /* Корректируем размер иконки */
+        width: 38px; 
         height: 38px;
         padding: 9px;
         right: 15px;
-        bottom: 15px; /* Снова вниз для маленьких экранов */
+        bottom: 15px; 
         top: auto;
     }
 }
 
 @media (max-width: 578px) {
     body {
-        display: block; /* Убираем flex с body, чтобы nav и main шли друг под другом */
-        font-size: 14px; /* Базовый размер шрифта */
+        display: block; 
+        font-size: 14px; 
     }
 
     .nav {
-        width: 100%; /* Навигация на всю ширину */
-        height: auto; /* Высота по контенту */
-        padding: 10px 5%; /* Уменьшаем отступы */
-        position: static; /* Убираем изначальное позиционирование (если было) */
-        box-sizing: border-box; /* Учитываем padding в ширине */
+        width: 100%; 
+        height: auto;
+        padding: 10px 5%; 
+        position: static; 
+        box-sizing: border-box; 
     }
 
     .nav .svg-f {
-        margin-bottom: 10px; /* Меньше отступ под лого */
+        margin-bottom: 10px; 
     }
 
     .nav .mainnav {
-         gap: 5px 8px; /* Промежутки между элементами */
-         padding: 0; /* Убираем лишний паддинг у контейнера ссылок */
-         justify-content: center; /* Центрируем элементы при переносе */
+         gap: 5px 8px; 
+         padding: 0; 
+         justify-content: center; 
     }
 
      .nav .mainnav .nav-item {
-         padding: 5px 8px; /* Меньше отступы у ссылок */
+         padding: 5px 8px; 
      }
 
      .nav .mainnav .nav-item .text {
-        font-size: 0.8em; /* Еще меньше текст в навигации */
-        /* Раскомментируйте ниже, если хотите скрыть текст и оставить только иконки */
-        /* display: none; */
+        font-size: 0.8em; 
     }
-    /* .nav .mainnav .nav-item .photo { */
-        /* margin-right: 0; */ /* Убрать отступ у иконки, если текст скрыт */
-    /* } */
 
     main {
-        width: 100%; /* Основной контент на всю ширину */
-        padding: 0 5%; /* Добавляем боковые отступы для контента */
+        width: 100%; 
+        padding: 0 5%; 
         box-sizing: border-box;
     }
 
     .worldnews {
-        margin: 25px 0; /* Вертикальные отступы */
-        padding: 0; /* Убираем лишние паддинги секции, т.к. они есть у main */
-        gap: 20px; /* Отступ между картинкой и текстом */
+        margin: 25px 0; 
+        padding: 0; 
+        gap: 20px; 
     }
 
     .worldnews .world {
-        max-width: 90%; /* Картинка может быть шире */
-        margin-bottom: 15px; /* Уменьшаем отступ под картинкой */
+        max-width: 90%; 
+        margin-bottom: 15px; 
     }
     .worldnews .world img {
-        display: block; /* Убирает лишний отступ под картинкой */
-        width: 100%; /* Картинка растягивается на всю ширину родителя */
-        height: auto; /* Сохраняем пропорции */
+        display: block; 
+        width: 100%; 
+        height: auto; 
     }
 
     .worldnews .text {
-        align-items: center; /* Центрируем контент в текстовом блоке */
+        align-items: center; 
     }
 
     .worldnews .text h1 {
-       font-size: 1.3em; /* Уменьшаем заголовок */
+       font-size: 1.3em; 
        line-height: 1.3;
     }
     .worldnews .text .netext {
-       font-size: 0.9em; /* Уменьшаем подзаголовок */
+       font-size: 0.9em; 
     }
     .worldnews .link {
-        padding: 10px 25px; /* Увеличиваем паддинг для удобства нажатия */
+        padding: 10px 25px; 
         font-size: 0.9em;
-        width: auto; /* Ширина по контенту */
-        margin-left: auto; /* Центрируем кнопку */
+        width: auto; 
+        margin-left: auto;
         margin-right: auto;
     }
 
     .news {
-        display: block; /* Убираем flex, чтобы заголовок был над блоками */
-        margin: 30px 0; /* Вертикальные отступы */
-        padding: 0; /* Убираем лишние паддинги секции */
-        gap: 0; /* Убираем gap */
+        display: block; 
+        margin: 30px 0; 
+        padding: 0; 
+        gap: 0; 
     }
 
     .news h1 {
-        font-size: 1.4em; /* Размер заголовка новостей */
-        text-align: center; /* Центрируем заголовок */
-        margin-bottom: 20px; /* Отступ под заголовком */
+        font-size: 1.4em; 
+        text-align: center; 
+        margin-bottom: 20px; 
     }
 
     .news2 {
-        transform: none; /* Убираем сдвиг */
-        gap: 25px; /* Отступ между карточками новостей */
-        margin-top: 0; /* Убираем отступ сверху */
+        transform: none; 
+        gap: 25px; 
+        margin-top: 0;
     }
 
     .newsband,
     .newshero {
-        width: 100%; /* Карточки на всю доступную ширину */
-        max-width: 380px; /* Ограничиваем макс. ширину для эстетики */
-        margin-left: 0; /* Убираем отступ слева у второй карточки */
-        height: auto; /* Высота по контенту */
+        width: 100%; 
+        max-width: 380px; 
+        margin-left: 0; 
+        height: auto; 
     }
 
     .photoband, .photohero {
-        width: 100%; /* Картинка на всю ширину карточки */
-        height: auto; /* Высота авто */
-        margin: 0; /* Убираем отступы */
+        width: 100%; 
+        height: auto; 
+        margin: 0; 
     }
     .photoband img, .photohero img {
-        display: block; /* Убираем отступ под картинкой */
+        display: block; 
         width: 100%;
         height: auto;
-        border-radius: 5px 5px 0 0; /* Скругляем только верхние углы */
+        border-radius: 5px 5px 0 0; 
     }
 
     .band, .hero {
-        margin: 0; /* Убираем отступы */
-        padding: 15px; /* Добавляем внутренние отступы */
+        margin: 0; 
+        padding: 15px; 
     }
 
      .band h2, .hero h2 {
-        font-size: 0.9em; /* Уменьшаем подзаголовок в карточке */
+        font-size: 0.9em; 
     }
     .band .twotextband, .hero .twotexthero {
-        font-size: 0.85em; /* Уменьшаем текст в карточке */
+        font-size: 0.85em; 
     }
     .linkband, .linkhero {
-        padding: 8px 15px; /* Паддинги для кнопки "Learn more" */
-        height: auto; /* Высота по контенту */
-        width: auto; /* Ширина по контенту */
-        display: inline-block; /* Чтобы паддинги работали корректно */
+        padding: 8px 15px; 
+        height: auto; 
+        width: auto; 
+        display: inline-block; 
         font-size: 0.8em;
     }
 
     .rick {
-        text-align: center; /* Центрируем контент */
-        margin-top: 30px; /* Отступ сверху */
+        text-align: center; 
+        margin-top: 30px; 
     }
     .rick h1 {
-        font-size: 1em; /* Размер заголовка */
-        margin-bottom: 15px; /* Отступ снизу */
+        font-size: 1em; 
+        margin-bottom: 15px; 
     }
     .rick .linkhero {
-        margin: 0 auto; /* Центрируем кнопку */
+        margin: 0 auto; 
     }
 
     .profile-image {
-        width: 35px; /* Размер иконки профиля */
+        width: 35px; 
         height: 35px;
-        padding: 8px; /* Внутренний отступ */
-        right: 15px; /* Позиция справа */
-        bottom: 15px; /* Позиция снизу */
-        top: auto; /* Убираем привязку к верху */
-        position: fixed; /* Фиксируем относительно окна браузера */
+        padding: 8px; 
+        right: 15px; 
+        bottom: 15px; 
+        top: auto; 
+        position: fixed; 
     }
 }

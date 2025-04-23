@@ -20,12 +20,10 @@ body{
 .txt {
     color: #737373;
     font-size: 16px;
-    text-decoration: none;
 }
 .red {
     color: #EF4444;
     font-size: 16px;
-    text-decoration: none;
 }
 .stay-signed-in-btn {
     color: #737373;
@@ -49,8 +47,7 @@ body{
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center;
-    text-decoration: none;
+    justify-content: center
 }
 .buttons {
     display: flex;
